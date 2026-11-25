@@ -1,0 +1,184 @@
+ /* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightcyan;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+/* Main Heading */
+.main-title {
+    text-align: center;
+    color: darkblue;
+    background-color: lightblue;
+    border: 2px solid skyblue;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* 1. Element Selector */
+h3 {
+    color: darkgreen;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* 2. Class Selector */
+.demo {
+    color: darkgreen;
+    background-color: lightgreen;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.demo2 {
+    color: blue;
+}
+
+/* 3. Grouping Selector */
+.group {
+    color: blue;
+}
+
+/* 4. Descendant and Child Selectors */
+.container > p {
+    color: blue;
+    background-color: lightyellow;
+    padding: 8px;
+}
+
+.container section p {
+    color: red;
+    background-color: lightyellow;
+    padding: 8px;
+}
+
+/* 5. Sibling Selectors */
+h4 + p {
+    color: red;
+    font-weight: bold;
+}
+
+h4 ~ p {
+    background-color: lightyellow;
+}
+
+/* 6. Attribute Selectors */
+input[placeholder] {
+    border: 2px solid rgb(13, 5, 5);
+    padding: 5px;
+}
+
+a[target="_blank"] {
+    text-decoration: none;
+}
+
+a[href$=".com"] {
+    font-weight: bold;
+}
+
+input[type*="pass"] {
+    border-radius: 5px;
+}
+
+/* 7. Pseudo-Class Selectors */
+button:hover {
+    background-color: orange;
+    color: white;
+}
+
+button:active {
+    background-color: red;
+}
+
+input:focus {
+    outline: 2px solid blue;
+    background-color: lightyellow;
+}
+
+li:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+li:last-child {
+    color: blue;
+}
+
+li:nth-child(2) {
+    background-color: lightgreen;
+}
+
+input:checked {
+    accent-color: green;
+}
+
+input:disabled {
+    background-color: gray;
+    color: white;
+}
+
+input:not([type="checkbox"]) {
+    border-radius: 4px;
+}
+
+/* ::first-letter
+   Styles the first letter of paragraph */
+.pseudo::first-letter {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+/* ::first-line
+   Styles the first line of paragraph */
+.pseudo::first-line {
+    color: blue;
+}
+
+/* ::before
+   Inserts content before heading content */
+.after::before {
+    content: "★ ";
+    color: orange;
+}
+
+/* ::after
+   Inserts content after heading content */
+.after::after {
+    content: "!";
+    color: red;
+}
+
+/* ::selection
+   Styles text selected by the user */
+::selection {
+    background-color: yellow;
+    color: red;
+}
+*/
+
+/* Element selector - lowest specificity */
+p {
+    color: blue;
+}
+
+/* Class selector - higher than element selector */
+.text {
+    color: green;
+}
+
+/* ID selector - higher than class selector */
+#para {
+    color: red;
+}
+}
