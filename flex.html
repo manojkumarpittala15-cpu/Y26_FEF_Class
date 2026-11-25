@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            align-items: center; 
+            align-content: space-around; 
+            gap: 15px; 
+            height: 60px; 
+            background-color: rgb(214, 17, 17); 
+            padding: 16px;
+        }
+       .box { 
+            flex:1 1 110px;
+            background-color: steelblue; 
+            color: white; 
+            padding: 5px; 
+            text-align: center; 
+            font-size: 15px; 
+
+       }
+         .box2 { 
+            order: 3; 
+         }
+          .box1 { 
+            order: 4; 
+        } 
+        .box3 { 
+            align-self: flex-end; 
+        } 
+
+    </style>
+</head>
+<body>
+        <h2>Student Skills Using Flexbox</h2> 
+        <div class="container"> 
+        <div class="box box1">HTML</div> 
+        <div class="box box2">CSS</div> 
+        <div class="box box3">JavaScript</div> 
+        <div class="box box4">Python</div>
+       </div>
+    
+</body>
+</html>
